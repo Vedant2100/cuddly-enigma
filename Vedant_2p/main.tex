@@ -1,0 +1,264 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{ulem}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\begin{document}
+
+% \vspace{-20pt}
+
+\begin{center}
+    {\Huge \scshape Vedant Borkute} \\[6pt]
+    \small 
+    \raisebox{-0.1\height}\faPhone\ +1 951-823-2856 \quad
+    \href{mailto:2711vedant@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \uline{2711vedant@gmail.com}} \quad
+    \href{mailto:vbork001@ucr.edu}{\raisebox{-0.2\height}\faGlobe\ \uline{vbork001@ucr.edu}} \quad
+    \href{https://github.com/Vedant2100}{\raisebox{-0.2\height}\faGithub\ \uline{Vedant2100}} \quad
+    \href{https://www.linkedin.com/in/vedant-b-1290a51a6/}{\raisebox{-0.2\height}\faLinkedin\ \uline{vedant-borkute}}
+\end{center}
+
+% \section{Open Source Contributions}
+
+% \subsection{Project A}
+% Description of contributions made to Project A.
+
+% \subsection{Project B}
+% Description of contributions made to Project B.
+
+% \subsection{Project C}
+% Description of contributions made to Project C.
+
+
+\section{Education}
+\noindent\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+  \textbf{University of California, Riverside} & \textit{Sep 2025 -- Mar 2027} \\
+  \textit{MS in Computer Science} & Riverside, California \\
+\end{tabular*}
+
+\vspace{6pt}
+
+\noindent\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+  \textbf{Indian Institute of Technology, Bombay} & \textit{Aug 2019 -- Apr 2023} \\
+  \textit{B.Tech in Computer Science} & Mumbai, Maharashtra, India \\
+\end{tabular*}
+\vspace{-5pt}
+\vspace{-10pt}
+\section{Experience}
+\textbf{Data Scientist} - \textit{Finarb.ai}\hfill \textit{Aug 2023 - Aug 2025}\\
+\vspace{8pt}
+\newline\textbf{ML \& AI Engineering}
+\begin{itemize}[leftmargin=*,label=\textbullet]
+  \item \textbf{Implemented and benchmarked demand and sales forecasting models (Seasonal Autoregression, Vector Autoregression, Facebook Prophet, LSTM, TCN) across DOD pharmaceutical supply-chain entities, achieving a \textbf{90\% reduction in mean absolute percentage error}.}
+  \item Conducted time-series diagnostics (ACF/PACF, EACF), mean and variance stationarity tests, and incorporated \textbf{exogenous variables} like mortality rates, veteran trends, inventory, backorders) into forecasting models to improve forecast accuracy.
+  \item Built \textbf{end-to-end forecasting pipeline}, including data generation, preprocessing and evaluating training/test performance using a custom metric for best model selection and containerizing workflows with Docker for reproducible production deployment.
+  \item Implemented AI agents:
+    \begin{itemize}[leftmargin=*,label=--]
+      \item \textbf{Feature Engineering:} Generated use-case domain-relevant features using a retrieval-augmented generation (RAG) pipeline on internet and PDF sources, improving model performance by an average of 5\%.
+      \item \textbf{Cross-Database Queries:} Execution of natural language queries involving data across multiple databases.
+      \item \textbf{Business Dashboards:} Automated dashboard generation calculating industry-relevant metrics and KPIs with intuitive visualizations
+    \end{itemize}
+\end{itemize}
+
+\textbf{Data Science \& Analytics}
+\begin{itemize}[leftmargin=*,label=\textbullet]
+  \item Performed \textbf{data preparation and analysis} for multiple pharmaceutical supply-chain use cases, including inventory analysis, inventory-order and pricing-order correlations, and current supply assessment; wrote optimized \textbf{SQL scripts} to generate datasets, compute model performance metrics, and present summaries to leadership.
+  \item Developed comprehensive \textbf{Power BI reports} and datasets for share gain attribution, portfolio performance, BCG-style product prioritization, competitor dynamics (top share gaps, vulnerability trends, consecutive share losses), and year-over-year revenue/volume dashboards; market share change alerts and executive summary.
+\end{itemize}
+
+% \usepackage{xcolor} % Add this in your preamble if not already included
+
+% % --------------------
+% % ATS / Keywords block (hidden)
+% % --------------------
+% \vspace{6pt}
+% \noindent\textcolor{white}{\textbf{Key skills \& ATS keywords:} Time series forecasting, (S)ARIMA(X), VARIMA(X), GARCH, LSTM, Temporal Convolutional Networks (TCN), Backtesting, Walk-forward validation, MAPE, ACF/PACF, EACF, Granger causality, Co-integration, Cross-correlation, Model registry, CI/CD, Containerization, Monitoring, Data drift, Prediction drift, Feature engineering, Feature pipelines, SQL optimization, Power BI, LangChain, LangGraph, LLM, GPT, Federated SQL, Prompt/version management, Model governance, Observability, Unit tests, Integration tests.}
+
+
+% \section*{Open Source Contributions}
+
+\section*{Scholastic Achievements and Olympiads}
+\begin{itemize}[label=$\bullet$]
+    \item Achieved All India Rank 1 for exceptional performance in category(OBC-PwD) for IIT-JEE Advanced.
+\hfill \textit{2019}
+    \item Achieved 99.26 percentile in JEE-Main out of 1.2 million candidates \hfill\textit{2019}
+    \item Received Late Kalpana Chawla Best Student award’ by Shivaji Science Junior College for
+throughout Higher Secondary Education. \hfill \textit{2017-19}
+    \item Secured International Rank 160 in International Mathematics Olympiad conducted by the Science Olympiad Foundation \hfill \textit{2015}
+    \item Secured 10.0 CGPA and 98.20\% in AISSE examination conducted by the Central Board of Secondary Education \hfill \textit{2017}
+\end{itemize}
+
+\section*{Projects}
+
+% \subsection*{Online Competing and Development Environment (Autumn 2020)} \
+% \textbf{Guide:} Prof. Amitabha Sanyal | \textbf{Course:} CS251 \\
+\subsection*{Online Competing and Development Environment (Autumn 2020)} \hfill\\
+\textbf{Guide:} Prof. Amitabha Sanyal \\
+• Built and deployed a remote virtual Linux environment aimed at removing inter-OS compatibility issues and enabling cross-platform code compilation using web browser. \\
+• Designed a Django based backend server supporting user-account creation and having storage capacity of upto 10 files including a directory structure and designed the front end with the help of Bootstrap library. \\
+• Added support for multiple programming languages including C++, Java and Python using basic library support. \\
+• Implemented an online competing environment wherein users can submit questions scheduled for a fixed time slot in which submissions get auto-graded on the basis of user input parameters.
+
+\subsection*{Custom Linux Shell and Feature Extension of xv6 (Autumn 2021)} \hfill\\
+\textbf{Guide:} Prof. Mythili Vutukuru IIT Bombay \\
+• Built a shell in C++ capable of serial, parallel background execution of single or multiple Unix commands \\
+• Created custom signal handler to enable controlled termination of foreground processes or the shell itself \\
+• Examined xv6 source code and implemented a variant of fork system call and simple version of wait, exec system calls.
+
+\subsection*{Image Segmentation (Autumn 2020)} \hfill\\
+\textbf{Guide:} Prof. Amitabha Sanyal IIT Bombay \\
+• Used K-means++ algorithm and Python SciPy Library to smoothen sharp contrast images. \\
+• Utilized NumPy, Pandas, SciPy libraries of Python to store pixels of images in matrix form. \\
+• Used K-means algorithm to find centroid and replaced pixels by its centroid for image segmentation.
+
+% \subsection*{COVID-19 Pandemic Predictions (Autumn 2020)} \hfill\\
+% \textbf{Guide:} Prof. Amitabha Sanyal IIT Bombay \\
+% • Applied Levitt’s H(t) on Indian COVID-19 death’s data read from a CSV file Using Pandas \\
+% • Plotted a scatter plot of data using Matplotlib to visualize the behavior of Levitt’s H(t) Metric \\
+% • Predicted the end of a pandemic using the Linear fit plot of data points by implementing Linear regression from Scipy module 
+% • The linear extraplotation-based prediction is fairly effective, at least when values of H(t) are small.
+
+% \subsection*{Morphism (Autumn 2020)} \hfill\\
+% \textbf{Guide:} Prof. Ajit A Diwan IIT Bombay \\
+% • Learned about Fibonacci sequence , thue-morse sequence and properties of their morphism. \\
+% • Taking properties of morphism implemented functions to find the longest common sub-sequences and substring with help of Dynamic Programming and Knuth-Morris-Pratt algorithm.
+
+\subsection*{Movie Recommendation System (Autumn 2022)} \hfill\\
+\textbf{Guide:} Prof. Abir De IIT Bombay \\
+• Analyzed a set of users with their previous ratings for a set of movies and then predict the rating they will assign to a movie they have not previously rated. Learned about Content-based and Collaborative filtering.
+
+\section*{Technical Skills}
+\begin{itemize}[label=$\bullet$]
+    \item \textbf{Programming:} C++, R, JavaScript, Python, Bash, Prolog, AWK, MIPS, Neo4J CQL, SQL, Sed, Lex, Yacc, LATEX
+    \item \textbf{Data Science:} Pandas,R, SQL ,Power BI, NumPy, SciPy, MATLAB, PostgreSQL
+    \item \textbf{Software:} Git, AutoCAD, Solidworks, Doxygen, Matlab
+    \item \textbf{Developer Tools:} Django, HTML, CSS, JavaScript, PHP, Bootstrap, Jquery, Android Studio, NodeJS
+\end{itemize}
+
+\section*{Courses Undertaken}
+\begin{itemize}[label=$\bullet$]
+    \item Mathematics: Calculus, Linear Algebra, Differential Equations
+    \item Computer Science: Data Structures and Algorithms + Lab, Discrete Structures, Data Analysis and Interpretation, Software Systems Lab, Design and Analysis of Algorithms, Digital Logic Design, Logic for Computer Science, Computer Networks + Lab, Abstractions and Paradigms in Programming + Lab, Computer Programming and Utilization, Operating Systems + Lab, Artificial Intelligence and Machine Learning + Lab, Computer Architecture + Lab, Introduction to Blockchains, Cryptocurrencies and Smart Contracts, Database and Information Systems, Implementation of Programming Languages + Lab, Automata Theory
+    \item Misc: Automated Reasoning, Critical Thinking for the Digital Age, Introduction to Electrical and Electronics Circuits, Quantum Physics and Application, Basics of Electricity and Magnetism, Engineering Graphics and Drawing, Physical Chemistry, Organic and Inorganic Chemistry, Biology
+\end{itemize}
+
+% \section*{Extracurricular}
+% \begin{itemize}[label=$\bullet$] 
+% \item Completed a one year course under the National Sports Organisation (NSO Yoga) (2019-20)
+% \item Participated in multiple Versova Beach CLeanup Campaigns organised by Abhyuday, IIT Bombay (2022)
+% \item Participated in State-level Drawing Competition organised by the Directorate of Art,Government of
+% Maharashtra. (2012)
+% \item Won third position at the CBSE West Zone Chess tournament at the Indus World School,
+% Indore. (2012)
+% \item Represented school at the CBSE Nationals Chess tournament held in Indore. (2013)
+
+% \end{itemize}
+\end{document}
